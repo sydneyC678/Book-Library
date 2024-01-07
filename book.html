@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="book.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="new-book-section">
+        <h1>LIBRARY</h1>
+        <button id="add-new-book-btn" class="button button-center">
+          Add New Book
+        </button>
+
+        <div class="new-book-form-container">
+          <form class="new-book-form" id="new-book-form">
+            <div class="box">
+              <div>Title</div>
+              <input id="title" type="text" />
+            </div>
+            <div class="box">
+              <div>Author</div>
+              <input id="author" type="text" />
+            </div>
+            <div class="box">
+              <div>Number of Pages</div>
+              <input id="page-number" type="text" />
+            </div>
+            <div id="is-read-box" class="box">
+              <legend>Have You Read the Book?</legend>
+
+              <input
+                id="not-read"
+                type="radio"
+                name="read-status"
+                value="No"
+              /><label>No</label>
+              <input
+                id="have-read"
+                type="radio"
+                name="read-status"
+                value="Yes"
+              /><label>Yes</label>
+            </div>
+            <button type="button" id="submit-new-book-btn" class="button">
+              Submit Book
+            </button>
+            <button type="button" id="close-new-book-btn" class="button">
+              Close
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="book-organizer">
+        <table class="book-organizer-table">
+          <h1>YOUR BOOKS</h1>
+          <thead>
+            <tr class="blue-background">
+              <th>Title</th>
+              <th>Author</th>
+              <th>Pages</th>
+              <th>Read</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody id="book-container" class="book-container"></tbody>
+        </table>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/142dde2f96.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="book.js"></script>
+  </body>
+</html>
