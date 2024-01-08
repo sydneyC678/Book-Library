@@ -10,7 +10,10 @@
   <body>
     <div class="container">
       <div class="new-book-section">
-        <h1>LIBRARY</h1>
+        <h1>
+          <i class="fa-solid fa-book-bookmark" style="margin-right: 10px"></i
+          >LIBRARY
+        </h1>
         <button id="add-new-book-btn" class="button button-center">
           Add New Book
         </button>
@@ -30,20 +33,25 @@
               <input id="page-number" type="text" />
             </div>
             <div id="is-read-box" class="box">
-              <legend>Have You Read the Book?</legend>
-
-              <input
-                id="not-read"
-                type="radio"
-                name="read-status"
-                value="No"
-              /><label>No</label>
-              <input
-                id="have-read"
-                type="radio"
-                name="read-status"
-                value="Yes"
-              /><label>Yes</label>
+              <legend style="margin-bottom: 10px">
+                Have You Read the Book?
+              </legend>
+              <div class="radio-option">
+                <input
+                  id="not-read"
+                  type="radio"
+                  name="read-status"
+                  value="No"
+                /><label for="not-read">No</label>
+              </div>
+              <div class="radio-option">
+                <input
+                  id="have-read"
+                  type="radio"
+                  name="read-status"
+                  value="Yes"
+                /><label for="have-read">Yes</label>
+              </div>
             </div>
             <button type="button" id="submit-new-book-btn" class="button">
               Submit Book
